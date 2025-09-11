@@ -1,1 +1,150 @@
 /* место для вашего кода */
+
+body {
+  background-color: #fff;
+  color: #000;
+  font-weight: normal;
+}
+
+/* Header */
+
+.header {
+  display: flex;
+  width: 1100px;
+  height: 293px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+
+}
+
+.menu__header {
+  width: 392px;
+  height: 22px;
+  font-size: 18px;
+  letter-spacing: 0%;
+  margin-left: 37px;
+}
+
+.menu__header ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.menu__header li {
+  list-style: circle;
+  margin-left: 18px;
+
+
+}
+
+.menu__header li:nth-child(1) {
+  list-style: none;
+  margin-left: 0;
+}
+
+.logo {
+  width: 148px;
+  height: 105px;
+
+}
+
+.contacts {
+  width: 240px;
+  height: 98px;
+  flex-wrap: nowrap;
+  font-size: 18px;
+  /* margin-right: 50px; */
+
+}
+
+/* Main */
+
+.description {
+
+}
+
+.cover {
+  display: flex;
+  width: 1100px;
+  height: 757px;
+  background-image: url(../images/cover.jpg);
+  background-size: cover;
+  /*   #000 / 60%; */
+  color: #fff;
+  left: 30%;
+
+}
+
+.cover__title {
+  font-weight: bold;
+  font-size: 100px;
+}
+
+.bet {
+
+  font-weight: ;
+  font-size: 22px;
+  color: #fff;
+  align-items: end;
+  justify-content: end;
+
+}
+
+.lots {
+  width: 1100px;
+  height: 723px;
+  margin-top: 180px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.card {
+  background-image:
+
+  width: 334px;
+  height: 596px;
+}
+
+.card-content {
+
+}
+
+.about-logo {
+
+}
+
+.about {
+  width: 1052px;
+  height: 595px;
+  margin: 120px 24px 180px;
+
+}
+
+/* Footer */
+
+.footer {
+  width: 1100px;
+  height: 180px;
+}
+
+.menu__footer {
+
+}
+
+.footer_socials {
+  width: 48px;
+  height: 48px;
+}
+
+.original {
+  width: 1100px;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.5;
+  filter: sepia(0.6);
+}
