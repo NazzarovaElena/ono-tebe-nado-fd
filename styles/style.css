@@ -25,19 +25,20 @@ body {
   height: 22px;
   font-size: 18px;
   letter-spacing: 0%;
-  margin-left: 37px;
+  /* line-height: auto;*/
+  margin-left: 50px;
+  margin-top: 135px;
+  margin-bottom: 136px;
+
 }
 
 .menu__header ul {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .menu__header li {
-  list-style: circle;
-  margin-left: 18px;
-
-
+  list-style: circle inside;
 }
 
 .menu__header li:nth-child(1) {
@@ -48,6 +49,20 @@ body {
 .logo {
   width: 148px;
   height: 105px;
+  margin-top: 92px;
+  margin-bottom: 95px;
+  margin-right: 150px;
+
+}
+
+
+
+.logo_place {
+  display: inline-block;
+  width: 129px;
+  height: 14px;
+  z-index: 2;
+
 
 }
 
@@ -56,42 +71,102 @@ body {
   height: 98px;
   flex-wrap: nowrap;
   font-size: 18px;
-  /* margin-right: 50px; */
-
+  margin-right: 50px;
+  margin-top: 95px;
+  margin-bottom: 100px;
+  line-height: 24.3px;
+  letter-spacing: 0%;
 }
 
 /* Main */
 
-.description {
-
-}
-
 .cover {
-  display: flex;
   width: 1100px;
   height: 757px;
   background-image: url(../images/cover.jpg);
   background-size: cover;
-  /*   #000 / 60%; */
+  background-position: center;
   color: #fff;
-  left: 30%;
 
+
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0 / 0.6);
+}
+
+.cover__overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .cover__title {
+  margin-top: 164px;
   font-weight: bold;
   font-size: 100px;
+  text-transform:uppercase;
+  letter-spacing: 30%;
+}
+
+.cover__title span:nth-child(1) {
+  text-align: left;
+  margin-left: 50px;
+
+}
+
+.cover__title span:nth-child(2) {
+  text-align: center;
+  margin-left: 30px;
+}
+
+.cover__title span:nth-child(3) {
+  text-align: right;
+  margin-right: 20px;
+
+
+
+}
+
+
+
+.cover__title span {
+  display: block;
+  height: 135px;
+}
+
+.description {
+  display: flex;
+  font-size: 22px;
+  margin-left: 50px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+
+}
+
+.description p {
+  line-height: 28px;
+  text-transform: uppercase;
+  word-spacing: 18.5px;
+  justify-content: space-around;
+
 }
 
 .bet {
+  width: 256px;
+  height: 51px;
+  margin-right: 50px;
+  align-self: center;
 
-  font-weight: ;
+  /* font-weight:; */
   font-size: 22px;
   color: #fff;
-  align-items: end;
-  justify-content: end;
 
 }
+
 
 .lots {
   width: 1100px;
@@ -103,6 +178,7 @@ body {
 
 .card {
   background-image:
+  background-color: rgb(0 0 0 / 0.6);
 
   width: 334px;
   height: 596px;
@@ -141,7 +217,7 @@ body {
 
 .original {
   width: 1100px;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
