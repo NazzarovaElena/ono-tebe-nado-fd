@@ -22,54 +22,9 @@ body {
   background-color: rgb(0 0 0 / 0.6);
 }
 
-/* h2 {
-  font-size: 40px;
-  font-weight: bold;
-  line-height: 120%;
-  text-transform: uppercase;
-} */
-
 
 /* ******************** Header ******************** */
 
-/* .header {
-  display: flex;
-  width: 1100px;
-  height: 293px;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.menu {
-
-}
-
-.menu__header {
-  width: 392px;
-  height: 22px;
-  font-size: 18px;
-  letter-spacing: 0;
-  /* line-height: auto;* /
-  margin-left: 50px;
-  margin-top: 135px;
-  margin-bottom: 136px;
-
-}
-
-.menu__header ul {
-  display: flex;
-  justify-content: space-between;
-}
-
-.menu__header li {
-  list-style: circle inside;
-}
-
-.menu__header li:nth-child(1) {
-  list-style: none;
-  margin-left: 0;
-}
-*/
 
 .header {
   display: flex;
@@ -79,20 +34,15 @@ body {
   justify-content: space-between;
 }
 
-.menu {
-
-}
-
 .menu__header {
   width: 392px;
   height: 22px;
   font-size: 18px;
   letter-spacing: 0;
   /* line-height: auto; */
-  margin-left: 48.5px;
-  margin-top: 135px;
+  margin-left: 50px;
+  margin-top: 133px;
   margin-bottom: 136px;
-
 }
 
 .menu__header ul {
@@ -113,25 +63,18 @@ body {
   width: 148px;
   height: 105px;
   margin-top: 92px;
-  /* margin-bottom: 95px;
-  margin-right: 150px;*/
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
 }
 
 .contacts__header {
-  margin-right: 50px;
+  width: 210px;
+  margin-right: 80px;
   margin-top: 95px;
   margin-bottom: 100px;
   flex-wrap: nowrap;
 }
-/* .logo_place {
-  display: inline-block;
-  width: 129px;
-  height: 14px;
-  z-index: 2;
-} */
 
 /* ******************** Main  ******************** */
 /* section cover */
@@ -162,7 +105,6 @@ body {
 .cover__title span:nth-child(1) {
   text-align: left;
   margin-left: 50px;
-
 }
 
 .cover__title span:nth-child(2) {
@@ -203,6 +145,7 @@ body {
   align-self: center;
   font-size: 22px;
   color: #fff;
+  text-transform: uppercase;
   background-color: transparent;
   border: 1px solid #fff;
 }
@@ -230,7 +173,6 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 334px);
   column-gap: 25px;
-
 }
 
 .card {
@@ -243,7 +185,6 @@ body {
   background-image: url(../images/card-lot-01.jpg);
   background-size: cover;
   background-position: center;
-
 }
 
 .card:nth-child(2) {
@@ -289,7 +230,6 @@ body {
 
 /* section about*/
 
-
 .about {
   display: grid;
   width: 1052px;
@@ -297,7 +237,6 @@ body {
   margin: 120px 24px 0;
   grid-template-columns: repeat(2, auto);
   gap: 68px;
-
 }
 
 .circle {
@@ -331,8 +270,9 @@ body {
 }
 
 .about__content p {
-  width: 690px; /* в макете двум абзацам из одного блока "Об аукционе" задана разная ширина.
-  В проекте проставила среднее значение. Поэтому при проверке в PixelPerfect текст параграфов не совпал в некоторых строках*/
+  width: 690px;      /* в макете двум абзацам из одного блока "Об аукционе" задана разная ширина.
+                     В проекте проставила среднее значение. Поэтому при проверке в PixelPerfect текст параграфов
+                    не совмещается в некоторых строках*/
   margin-top: 24px;
 }
 
@@ -347,7 +287,6 @@ body {
   place-content: baseline space-between;
   margin-top: 181.5px;
   margin-left: 50.5px;
-
 }
 
 
