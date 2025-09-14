@@ -285,15 +285,17 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   width: 100%;
   place-content: baseline space-between;
-  margin-top: 181.5px;
-  margin-left: 50.5px;
+  margin-top: 181px;
+}
+
+.footer__contacts {
+  margin-left: 51px;
 }
 
 .footer__menu {
   font-size: 18px;
   justify-content: center;
   text-align: center;
-  margin-right: 100px;
 }
 
 .footer__menu li {
@@ -302,10 +304,9 @@ body {
 
 .footer_socials {
   display: flex;
-  justify-content:space-between;
-  margin-left: 26px;
-  width: 240px;
-  height: 48px;
+  justify-content: flex-end;
+  margin-right: 50px;
+  column-gap: 48px;
 }
 
 .footer_socials li {
