@@ -66,7 +66,7 @@ body {
 .contacts__header {
   width: 210px;
   margin-right: 80px;
-  margin-top: 95px;
+  margin-top: 97px;
   flex-wrap: nowrap;
 }
 
@@ -235,7 +235,7 @@ body {
   width: 1052px;
   margin: 152px 24px 0;
   grid-template-columns: 334px auto;
-  gap: 24px;
+  gap: 25px;
 }
 
 .circle {
