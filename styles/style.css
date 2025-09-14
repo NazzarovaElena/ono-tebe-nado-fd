@@ -6,9 +6,33 @@ body {
   font-weight: normal;
 }
 
-/* Header */
+.contacts {
+  width: 240px;
+  height: 98px;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 24.3px;
+  letter-spacing: 0;
 
-.header {
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0 / 0.6);
+}
+
+/* h2 {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 120%;
+  text-transform: uppercase;
+} */
+
+
+/* ******************** Header ******************** */
+
+/* .header {
   display: flex;
   width: 1100px;
   height: 293px;
@@ -24,9 +48,48 @@ body {
   width: 392px;
   height: 22px;
   font-size: 18px;
-  letter-spacing: 0%;
-  /* line-height: auto;*/
+  letter-spacing: 0;
+  /* line-height: auto;* /
   margin-left: 50px;
+  margin-top: 135px;
+  margin-bottom: 136px;
+
+}
+
+.menu__header ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu__header li {
+  list-style: circle inside;
+}
+
+.menu__header li:nth-child(1) {
+  list-style: none;
+  margin-left: 0;
+}
+*/
+
+.header {
+  display: flex;
+  width: 100%;
+  height: 293px;
+  position: relative;
+  justify-content: space-between;
+}
+
+.menu {
+
+}
+
+.menu__header {
+  width: 392px;
+  height: 22px;
+  font-size: 18px;
+  letter-spacing: 0;
+  /* line-height: auto; */
+  margin-left: 48.5px;
   margin-top: 135px;
   margin-bottom: 136px;
 
@@ -50,35 +113,28 @@ body {
   width: 148px;
   height: 105px;
   margin-top: 92px;
-  margin-bottom: 95px;
-  margin-right: 150px;
-
+  /* margin-bottom: 95px;
+  margin-right: 150px;*/
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-
-
-.logo_place {
+.contacts__header {
+  margin-right: 50px;
+  margin-top: 95px;
+  margin-bottom: 100px;
+  flex-wrap: nowrap;
+}
+/* .logo_place {
   display: inline-block;
   width: 129px;
   height: 14px;
   z-index: 2;
+} */
 
-
-}
-
-.contacts {
-  width: 240px;
-  height: 98px;
-  flex-wrap: nowrap;
-  font-size: 18px;
-  margin-right: 50px;
-  margin-top: 95px;
-  margin-bottom: 100px;
-  line-height: 24.3px;
-  letter-spacing: 0%;
-}
-
-/* Main */
+/* ******************** Main  ******************** */
+/* section cover */
 
 .cover {
   width: 1100px;
@@ -87,14 +143,6 @@ body {
   background-size: cover;
   background-position: center;
   color: #fff;
-
-
-}
-
-.overlay {
-  width: 100%;
-  height: 100%;
-  background-color: rgb(0 0 0 / 0.6);
 }
 
 .cover__overlay {
@@ -108,7 +156,7 @@ body {
   font-weight: bold;
   font-size: 100px;
   text-transform:uppercase;
-  letter-spacing: 30%;
+  letter-spacing: 0.3em;
 }
 
 .cover__title span:nth-child(1) {
@@ -125,12 +173,7 @@ body {
 .cover__title span:nth-child(3) {
   text-align: right;
   margin-right: 20px;
-
-
-
 }
-
-
 
 .cover__title span {
   display: block;
@@ -144,7 +187,6 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 50px;
-
 }
 
 .description p {
@@ -152,7 +194,6 @@ body {
   text-transform: uppercase;
   word-spacing: 18.5px;
   justify-content: space-around;
-
 }
 
 .bet {
@@ -160,13 +201,13 @@ body {
   height: 51px;
   margin-right: 50px;
   align-self: center;
-
-  /* font-weight:; */
   font-size: 22px;
   color: #fff;
-
+  background-color: transparent;
+  border: 1px solid #fff;
 }
 
+/* section lots */
 
 .lots {
   width: 1100px;
@@ -176,42 +217,157 @@ body {
   margin-right: 24px;
 }
 
-.card {
-  background-image:
-  background-color: rgb(0 0 0 / 0.6);
+.lots__title {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 120%;
+  text-transform: uppercase;
+  margin-left: 40px;
+  margin-bottom: 26px;
+}
 
+.lots__list {
+  display: grid;
+  grid-template-columns: repeat(3, 334px);
+  column-gap: 25px;
+
+}
+
+.card {
+  list-style: none;
   width: 334px;
   height: 596px;
 }
 
-.card-content {
+.card:nth-child(1) {
+  background-image: url(../images/card-lot-01.jpg);
+  background-size: cover;
+  background-position: center;
 
 }
 
-.about-logo {
-
+.card:nth-child(2) {
+  background-image: url(../images/card-lot-02.jpg);
+  background-size: cover;
+  background-position: center;
 }
+
+.card:nth-child(3) {
+  background-image: url(../images/card-lot-03.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.card__container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.card__title {
+  font-size: 22px;
+  color: #fff;
+  text-transform: uppercase;
+  width: 100%;
+  padding: 48px 40px 0;
+  flex-grow: 1;
+}
+
+.card__content {
+  width: 254px;
+  margin: 0 40px 48px;
+  font-size: 20px;
+  line-height: 120%;
+  color: #fff;
+}
+
+.lots__more {
+  font-size: 20px;
+  margin-left: 40px;
+  margin-top: 31px;
+}
+
+/* section about*/
+
 
 .about {
+  display: grid;
   width: 1052px;
   height: 595px;
-  margin: 120px 24px 180px;
+  margin: 120px 24px 0;
+  grid-template-columns: repeat(2, auto);
+  gap: 68px;
 
 }
 
-/* Footer */
+.circle {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background-color: #000;
+  margin-left: 47px;
+  margin-top: 34px;
+}
+
+.circle img {
+  width: 148px;
+  height: 114px;
+  margin-top: 65px;
+  margin-left: 46px;
+}
+
+.about__title {
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 136px;
+  margin-right: 1px;
+}
+
+.about__content {
+  font-size: 20px;
+  line-height: 1.2;
+  margin-top: 100px;
+}
+
+.about__content p {
+  width: 690px; /* в макете двум абзацам из одного блока "Об аукционе" задана разная ширина.
+  В проекте проставила среднее значение. Поэтому при проверке в PixelPerfect текст параграфов не совпал в некоторых строках*/
+  margin-top: 24px;
+}
+
+/* ******************** Footer ******************** */
 
 .footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   width: 1100px;
   height: 180px;
+  /* align-items: center; */
+  place-content: baseline space-between;
+  margin-top: 181.5px;
+  margin-left: 50.5px;
+
 }
 
-.menu__footer {
 
+
+.footer__menu {
+  font-size: 18px;
+  justify-content: center;
+  text-align: center;
+  margin-right: 100px;
+}
+
+.footer__menu li {
+  list-style: none;
 }
 
 .footer_socials {
-  width: 48px;
+  display: flex;
+  justify-content:space-between;
+  margin-left: 26px;
+  width: 240px;
   height: 48px;
 }
 
