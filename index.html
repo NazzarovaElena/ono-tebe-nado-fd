@@ -11,34 +11,31 @@
   </head>
   <body>
     <header class="header">
-      <nav class="menu menu__header">
+      <nav class="menu header__menu">
         <ul>
           <li>
-            <a>главная</a>
+            <a href="#" class="menu__active">главная</a>
           </li>
           <li>
-            <a href="#">посмотреть лоты</a>
+            <a href="#lots">посмотреть лоты</a>
           </li>
           <li>
-            <a href="#">об аукционе</a>
+            <a href="#about">об аукционе</a>
           </li>
         </ul>
       </nav>
 
-      <div>
-        <a>
-          <img class="logo"
-            src="images/logo-black.svg"
-            alt="Логотип Оно тебе надо"
-            width="148"
-            height="105"
-          >
-        </a>
-      </div>
+      <a href="#" class="header__logo">
+        <img src="images/logo-black.svg"
+          alt="Логотип Оно тебе надо"
+          width="148"
+          height="105"
+        >
+      </a>
 
-      <address class="contacts contacts__header">
-        <a href="tel:+99995555555">+9 999 555 5555</a> <!-- div удалила, классы не менялись-->
-        <a href="mailto:info@sobaka.ge">info@sobaka.ge</a> <!--div удалила, классы не менялись -->
+      <address class="contacts header__contacts">
+        <a href="tel:+99995555555">+9 999 555 5555</a>
+        <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
         <p>наб. Принсенграхт 263- 265, Амстердам</p>
       </address>
     </header>
@@ -52,12 +49,12 @@
           </h1>
           <div class="description">
             <p>Аукцион вещей, в которые никто не верил</p>
-            <button class="bet-button">Сделать ставку</button>
+            <button class="bet-button" type="button">Сделать ставку</button>
           </div>
         </div>
       </section>
 
-      <section class="lots">
+      <section class="lots" id="lots">
         <h2 class="lots__title">Лоты</h2>
         <ul class="lots__list">
           <li class="card">
@@ -101,7 +98,7 @@
         </div>
       </section>
 
-      <section class="about">
+      <section class="about" id="about">
         <div class="circle"><img src="images/logo-white.svg" alt="логотип Оно тебе надо"></div>
         <div>
           <h2 class="about__title">Об аукционе</h2>
@@ -126,13 +123,13 @@
       <nav class="footer__menu">
         <ul>
           <li>
-            <a>главная</a>
+            <a href="#" class="menu__active">главная</a>
           </li>
           <li>
-            <a href="#">посмотреть лоты</a>
+            <a href="#lots">посмотреть лоты</a>
           </li>
           <li>
-            <a href="#">об аукционе</a>
+            <a href="#about">об аукционе</a>
           </li>
         </ul>
       </nav>

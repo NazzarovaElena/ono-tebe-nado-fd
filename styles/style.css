@@ -1,6 +1,8 @@
 /* место для вашего кода */
 
-
+.menu__active {
+  text-decoration: none;
+}
 
 .contacts {
   width: 240px;
@@ -8,6 +10,10 @@
   font-style: normal;
   line-height: 1.35;
   letter-spacing: 0;
+}
+
+.contacts a {
+  text-wrap: nowrap;
 }
 
 .overlay {
@@ -19,16 +25,26 @@
 
 /* ******************** Header ******************** */
 
-
-.header {
+/*
+ .header {
   display: flex;
   width: 100%;
-  /* height: 293px; */
+
   position: relative;
   justify-content: space-between;
 }
+*/
 
-.menu__header {
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  place-content: baseline space-between;
+  /* margin-top: 181px; */
+}
+
+.header__menu {
   width: 392px;
   font-size: 18px;
   letter-spacing: 0;
@@ -36,37 +52,34 @@
   margin-top: 133px;
 }
 
-.menu__header ul {
+.header__menu ul {
   display: flex;
   justify-content: space-between;
 }
 
-.menu__header li {
+.header__menu li {
   list-style: circle inside;
 }
 
-.menu__header li:nth-child(1) {
+.header__menu li:nth-child(1) {
   list-style: none;
   margin-left: 0;
 }
 
-.logo {
+.header__logo {
   width: 148px;
-  height: 105px;
-  margin-top: 92px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  height: 110px;
+  margin-left: 34px;
+  align-self: center;
+  text-decoration: none;
 }
 
-.contacts__header {
+.header__contacts {
   width: 210px;
-  margin-right: 80px;
-  margin-top: 97px;
-  flex-wrap: nowrap;
+  margin-left: 40px;
+  margin-top: 96px;
   padding-bottom: 100px;
 }
-
 
 /* ******************** Main  ******************** */
 
@@ -77,7 +90,8 @@
   min-height: 757px;  /* заменила с height. Без padding. Текст сместился */
   background-image: url(../images/cover.jpg);
   background-size: cover;
-  background-position: center; /* на что менять, необязательно к исправлению */
+  background-position: center;
+  background-repeat: no-repeat;
   color: #fff;
 }
 
@@ -291,7 +305,6 @@
 
 .footer__menu {
   font-size: 18px;
-  justify-content: center;
   text-align: center;
 }
 
