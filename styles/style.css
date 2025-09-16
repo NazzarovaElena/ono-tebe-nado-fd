@@ -26,23 +26,12 @@
 
 /* ******************** Header ******************** */
 
-/*
- .header {
-  display: flex;
-  width: 100%;
-
-  position: relative;
-  justify-content: space-between;
-}
-*/
-
 
 .header {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   width: 100%;
   place-content: baseline space-between;
-  /* margin-top: 181px; */
 }
 
 .header__menu {
@@ -64,7 +53,6 @@
 
 .header__menu li:nth-child(1) {
   list-style: none;
-  margin-left: 0;
 }
 
 .header__logo {
@@ -182,11 +170,8 @@
   row-gap: 25px;
 }
 
-.card {
-  color: #fff;
+.card__container {
   list-style: none;
-  width: 334px;
-  height: 596px;
 }
 
 .card__link {
@@ -194,28 +179,28 @@
   display: block;
 }
 
-.card:nth-child(1) {
-  background-image: url(../images/card-lot-01.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-.card:nth-child(2) {
-  background-image: url(../images/card-lot-02.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-.card:nth-child(3) {
-  background-image: url(../images/card-lot-03.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-.card__container {
+.card {
+  position: relative;
   display: flex;
   flex-direction: column;
-  min-height: 100%;
+  color: #fff;
+  width: 334px;
+  min-height: 596px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card-lot-01 {
+  background-image: url(../images/card-lot-01.jpg);
+}
+
+.card-lot-02 {
+  background-image: url(../images/card-lot-02.jpg);
+}
+
+.card-lot-03 {
+  background-image: url(../images/card-lot-03.jpg);
 }
 
 .card__title {
@@ -225,6 +210,7 @@
   width: 100%;
   padding: 48px 40px 0;
   flex-grow: 1;
+  z-index: 1;
 }
 
 .card__content {
@@ -232,6 +218,7 @@
   margin: 0 40px 48px;
   font-size: 20px;
   line-height: 1.2;
+  z-index: 1;
 }
 
 .lots__more {
@@ -322,14 +309,4 @@
 
 .footer__socials li {
   list-style: none;
-}
-
-.original {
-width: 1100px;
-position: absolute;
-top: 0;
-left: 50%;
-transform: translateX(-50%);
-opacity: 0.5;
-filter: sepia(0.6);
 }
